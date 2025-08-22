@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+body .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  height: 100vh;
+}
+body .wrap nav {
+  padding-top: 5%;
+}
+body .wrap nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+body .wrap nav ul li a {
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+}
+body .wrap nav ul li .active {
+  border-bottom: 2px solid pink;
+}
+body .wrap header {
+  width: 120%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+body .wrap .burger {
+  width: 50px;
+  height: 50px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .wrap .burger .line {
+  width: 100%;
+  height: 7px;
+  background-color: black;
+  border-radius: 5px;
+}
+body .wrap .product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 900px;
+}
+body .wrap .product img {
+  max-width: 500px;
+}
+body .wrap .product .productInfo p {
+  color: #666;
+}
+body .wrap .product .productInfo .price {
+  display: flex;
+  align-items: baseline;
+}
+body .wrap .product .productInfo .price h3 {
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+body .wrap .product .productInfo .price h4 {
+  text-decoration: line-through;
+  color: #666;
+  margin-left: 10px;
+}
+body .wrap .product .productInfo button {
+  background: #e91e63;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 30px;
+  border: none;
+  cursor: pointer;
+}
+body .wrap .product:nth-child(even) {
+  flex-direction: row-reverse;
+}
+body .wrap .response {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  gap: 30px;
+}
+body .wrap .response .img img {
+  max-width: 500px;
+}
+body .wrap .response .review {
+  display: flex;
+  flex-direction: column;
+}
+body .wrap .response .review .userCard {
+  display: flex;
+}
+body .wrap .response .review .userCard img {
+  width: 50px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+body .wrap .response .review .userCard .name p {
+  color: #666;
+}
+body .wrap .response .review .text {
+  display: flex;
+}
+body .wrap .response .review .anotherReview {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+  margin-right: 10%;
+}
+body .wrap .response .review .anotherReview .avatar1 img {
+  width: 50px;
+  border-radius: 30px;
+}
+body .wrap .response .review .anotherReview .avatar2 img {
+  width: 70px;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 940px) {
+  .burger {
+    display: flex !important;
+  }
+  nav {
+    display: none;
+  }
+  .product {
+    flex-direction: column !important;
+    margin-bottom: 10px;
+  }
+  .response {
+    flex-direction: column-reverse !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .burger {
+    display: flex !important;
+  }
+  .product {
+    width: 90%;
+  }
+  .product img {
+    max-width: 300px !important;
+  }
+  .response img {
+    max-width: 300px !important;
+  }
+}/*# sourceMappingURL=style.css.map */
